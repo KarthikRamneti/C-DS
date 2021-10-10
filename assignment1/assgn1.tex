@@ -219,8 +219,8 @@ and in the second call, num = 6, and r() return 6, after the first call num valu
 \\
 The execution of program is as follows and prints 52.
 
-\newpage
-\begin{figure}[!h]
+
+\begin{figure}[h]
 \centering
 \begin{tikzpicture}[node distance = 3cm, auto]
     % Place nodes
@@ -253,6 +253,58 @@ The execution of program is as follows and prints 52.
 \end{tikzpicture}
 \caption{Program Execution Timeline} \label{fig:M1}
 \end{figure}
+
+
+\section{General Mathematical formula}
+If the static variable num is initialised to a number of the form $\textbf{3k+1}$, where $k>=0$. Then the initialization call in for loop runs one time, the condition call, code block call and the increment call in the for loop runs k times because after this r() returns 0, so the condition statement will be false and the for loop terminates.Therefore the print statement is called k times. So it prints (num-2)(num-2-3)....2.
+\\
+\\
+If the static variable num is initialised to a number which is not of the form $\textbf{3k+1}$, then the for loop runs indefinitely because the r() call in the
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+condition statement will never return 0.
+$
+Output = \begin{cases} 
+      (num-2)(num-5)....2 & num=3k+1 \\
+      runs\,infinetly & else
+   \end{cases}
+$
+
 
 
 
